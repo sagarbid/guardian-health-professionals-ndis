@@ -70,15 +70,21 @@ export default function HomePage() {
             </div>
 
             <div className="lg:pl-6">
-              <div className="mb-4 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+              <div className="relative mb-4 overflow-hidden rounded-2xl border border-slate-200 bg-slate-900 shadow-sm">
                 <Image
-                  src="/illustrations/hero-care.svg"
-                  alt="Compassionate support illustration"
-                  width={1200}
-                  height={900}
-                  className="h-auto w-full"
+                  src="/photos/hero.jpg"
+                  alt="Support worker assisting an older person with a mobility aid"
+                  width={1600}
+                  height={1067}
+                  className="h-56 w-full object-cover sm:h-72"
                   priority
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/15 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-4">
+                  <div className="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-slate-900">
+                    Compassionate, participant-led support
+                  </div>
+                </div>
               </div>
               <ContactCtaForm />
             </div>

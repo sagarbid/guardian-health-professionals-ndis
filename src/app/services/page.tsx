@@ -65,11 +65,11 @@ export default function ServicesPage() {
             </div>
             <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
               <Image
-                src="/illustrations/services-icons.svg"
-                alt="Illustration representing NDIS supports"
-                width={1200}
-                height={700}
-                className="h-auto w-full"
+                src="/photos/services.jpg"
+                alt="People participating in a group activity"
+                width={1600}
+                height={1067}
+                className="h-72 w-full object-cover sm:h-96"
               />
             </div>
           </div>
