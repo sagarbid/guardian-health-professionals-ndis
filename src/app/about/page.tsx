@@ -112,7 +112,7 @@ export default function AboutPage() {
             <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
               <Image
                 src="/photos/about.jpg"
-                alt="Caregiver assisting an older couple with an activity"
+                alt="A person using a wheelchair outdoors in an urban setting"
                 width={1600}
                 height={1067}
                 className="h-72 w-full object-cover sm:h-96"

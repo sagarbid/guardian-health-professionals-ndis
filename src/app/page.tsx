@@ -73,7 +73,7 @@ export default function HomePage() {
               <div className="relative mb-4 overflow-hidden rounded-2xl border border-slate-200 bg-slate-900 shadow-sm">
                 <Image
                   src="/photos/hero.jpg"
-                  alt="Support worker assisting an older person with a mobility aid"
+                  alt="A person using a wheelchair in a bright, accessible home setting"
                   width={1600}
                   height={1067}
                   className="h-56 w-full object-cover sm:h-72"

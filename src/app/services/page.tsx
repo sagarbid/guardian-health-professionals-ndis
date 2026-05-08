@@ -66,7 +66,7 @@ export default function ServicesPage() {
             <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
               <Image
                 src="/photos/services.jpg"
-                alt="People participating in a group activity"
+                alt="An accessible entrance ramp with handrails"
                 width={1600}
                 height={1067}
                 className="h-72 w-full object-cover sm:h-96"
