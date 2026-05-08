@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-label="NDIS services illustration">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eff6ff"/>
+      <stop offset="0.55" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#ecfdf5"/>
+    </linearGradient>
+    <linearGradient id="accent3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="700" rx="52" fill="url(#bg3)"/>
+
+  <!-- Grid of service tiles -->
+  <g fill="#ffffff" stroke="#e2e8f0" stroke-width="2">
+    <rect x="120" y="130" width="280" height="180" rx="28"/>
+    <rect x="460" y="130" width="280" height="180" rx="28"/>
+    <rect x="800" y="130" width="280" height="180" rx="28"/>
+    <rect x="120" y="360" width="280" height="180" rx="28"/>
+    <rect x="460" y="360" width="280" height="180" rx="28"/>
+    <rect x="800" y="360" width="280" height="180" rx="28"/>
+  </g>
+
+  <!-- Icons (simple, friendly) -->
+  <g stroke="url(#accent3)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.9">
+    <!-- Heart (personal care) -->
+    <path d="M220 210c0-30 38-46 62-20 24-26 62-10 62 20 0 44-62 80-62 80s-62-36-62-80z"/>
+    <!-- Bus (transport) -->
+    <path d="M560 205h80c16 0 28 12 28 28v36c0 16-12 28-28 28h-80c-16 0-28-12-28-28v-36c0-16 12-28 28-28z"/>
+    <path d="M540 240h156M560 305v20M640 305v20"/>
+    <!-- Spark (life skills) -->
+    <path d="M940 185l18 70 70 18-70 18-18 70-18-70-70-18 70-18 18-70z"/>
+
+    <!-- Home (household) -->
+    <path d="M200 445l60-50 60 50v88h-46v-52h-28v52h-46v-88z"/>
+    <!-- Shield (nursing) -->
+    <path d="M600 392l78 36v64c0 70-46 124-78 132-32-8-78-62-78-132v-64l78-36z"/>
+    <!-- People (group activities) -->
+    <path d="M910 520v-18c0-26 22-48 48-48h74c26 0 48 22 48 48v18"/>
+    <path d="M980 430c20 0 36-16 36-36s-16-36-36-36-36 16-36 36 16 36 36 36z"/>
+  </g>
+
+  <!-- Caption line -->
+  <rect x="120" y="590" width="960" height="18" rx="9" fill="#94a3b8" opacity="0.22"/>
+  <rect x="120" y="620" width="680" height="18" rx="9" fill="#94a3b8" opacity="0.16"/>
+</svg>
+

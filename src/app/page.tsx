@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Container from "@/components/Container";
 import ContactCtaForm from "@/components/ContactCtaForm";
 import { Icon } from "@/components/icons";
@@ -69,6 +70,16 @@ export default function HomePage() {
             </div>
 
             <div className="lg:pl-6">
+              <div className="mb-4 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+                <Image
+                  src="/illustrations/hero-care.svg"
+                  alt="Compassionate support illustration"
+                  width={1200}
+                  height={900}
+                  className="h-auto w-full"
+                  priority
+                />
+              </div>
               <ContactCtaForm />
             </div>
           </div>
@@ -217,4 +228,3 @@ export default function HomePage() {
     </div>
   );
 }
-
