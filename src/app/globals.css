@@ -25,6 +25,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Premium-ish base */
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: rgba(16, 185, 129, 0.25);
+}
+
 .skip-link {
   position: absolute;
   left: -999px;

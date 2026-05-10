@@ -33,7 +33,7 @@ export default function SiteNav() {
                   alt=""
                   width={96}
                   height={96}
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-contain p-1"
                   priority
                 />
               </div>
@@ -45,7 +45,7 @@ export default function SiteNav() {
                   alt={SITE.shortName}
                   width={520}
                   height={140}
-                  className="h-6 w-auto"
+                  className="h-7 w-auto"
                   priority
                 />
               </div>

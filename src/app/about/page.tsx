@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Container from "@/components/Container";
+import PageHeader from "@/components/PageHeader";
 import SectionHeading from "@/components/SectionHeading";
 import { SITE } from "@/lib/site";
 
@@ -69,58 +69,41 @@ export default function AboutPage() {
 
   return (
     <div className="bg-white">
-      <section className="border-b border-slate-200 bg-gradient-to-b from-slate-50 to-white">
-        <Container className="py-14 sm:py-20">
-          <div className="grid gap-8 lg:grid-cols-2 lg:items-start">
-            <div>
-              <SectionHeading
-                eyebrow="About us"
-                title="An NDIS & SDA provider built on trust"
-                description="We support NDIS participants with practical, compassionate care — empowering independence, dignity and choice."
-              />
-              <div className="mt-6 grid gap-4 md:grid-cols-3 lg:grid-cols-3">
-                <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-                  <div className="text-sm font-extrabold text-slate-900">
-                    Our mission
-                  </div>
-                  <p className="mt-2 text-sm leading-relaxed text-slate-700">
-                    Empower independence and dignity through compassionate support
-                    that is safe, reliable and aligned to the participant’s goals.
-                  </p>
-                </div>
-                <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-                  <div className="text-sm font-extrabold text-slate-900">
-                    Our approach
-                  </div>
-                  <p className="mt-2 text-sm leading-relaxed text-slate-700">
-                    Listen first, plan clearly, deliver consistently — and keep
-                    communication simple and respectful.
-                  </p>
-                </div>
-                <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-                  <div className="text-sm font-extrabold text-slate-900">
-                    Based in
-                  </div>
-                  <p className="mt-2 text-sm leading-relaxed text-slate-700">
-                    {SITE.addressLine}. Supporting Melbourne and surrounding areas
-                    across Victoria.
-                  </p>
-                </div>
-              </div>
+      <PageHeader
+        eyebrow="About"
+        title="An NDIS & SDA provider built on trust"
+        description="We support NDIS participants with practical, compassionate care — empowering independence, dignity and choice."
+        imageSrc="/illustrations/about.webp"
+        imageAlt="Uplifting illustration of an inclusive support team and community"
+      >
+        <div className="grid gap-4 md:grid-cols-3">
+          <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div className="text-sm font-extrabold text-slate-900">
+              Our mission
             </div>
-
-            <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-              <Image
-                src="/illustrations/about-uplift.svg"
-                alt="Uplifting illustration of an inclusive support team and community"
-                width={1600}
-                height={900}
-                className="h-72 w-full object-cover sm:h-96"
-              />
-            </div>
+            <p className="mt-2 text-sm leading-relaxed text-slate-700">
+              Empower independence and dignity through compassionate support
+              that is safe, reliable and aligned to the participant’s goals.
+            </p>
           </div>
-        </Container>
-      </section>
+          <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div className="text-sm font-extrabold text-slate-900">
+              Our approach
+            </div>
+            <p className="mt-2 text-sm leading-relaxed text-slate-700">
+              Listen first, plan clearly, deliver consistently — and keep
+              communication simple and respectful.
+            </p>
+          </div>
+          <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div className="text-sm font-extrabold text-slate-900">Based in</div>
+            <p className="mt-2 text-sm leading-relaxed text-slate-700">
+              {SITE.addressLine}. Supporting Melbourne and surrounding areas
+              across Victoria.
+            </p>
+          </div>
+        </div>
+      </PageHeader>
 
       <section>
         <Container className="py-14">

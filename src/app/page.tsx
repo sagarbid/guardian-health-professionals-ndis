@@ -72,7 +72,7 @@ export default function HomePage() {
             <div className="lg:pl-6">
               <div className="relative mb-4 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
                 <Image
-                  src="/illustrations/hero-uplift.svg"
+                  src="/illustrations/hero.webp"
                   alt="Uplifting illustration of disability support and community connection"
                   width={1600}
                   height={900}

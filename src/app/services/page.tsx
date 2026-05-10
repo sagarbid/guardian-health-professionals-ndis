@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Script from "next/script";
 import Container from "@/components/Container";
-import SectionHeading from "@/components/SectionHeading";
+import PageHeader from "@/components/PageHeader";
 import ServiceCard from "@/components/ServiceCard";
 import { SERVICES } from "@/lib/services";
 import { SITE } from "@/lib/site";
@@ -47,42 +46,25 @@ export default function ServicesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <section className="border-b border-slate-200 bg-gradient-to-b from-slate-50 to-white">
-        <Container className="py-14 sm:py-20">
-          <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
-            <div>
-              <SectionHeading
-                eyebrow="Services"
-                title="NDIS disability supports"
-                description="We provide flexible supports across Melbourne and Victoria. All services are delivered in line with NDIS Practice Standards and participant choice and control."
-              />
-              <p className="mt-4 max-w-3xl text-sm leading-relaxed text-slate-700">
-                Pricing:{" "}
-                <span className="font-semibold text-slate-900">NDIS-funded</span>{" "}
-                (rates and supports depend on your plan and goals). Contact us
-                to confirm availability and fit.
-              </p>
-              <div className="mt-4 rounded-xl border border-slate-200 bg-white p-4 text-sm text-slate-700">
-                <div className="text-sm font-extrabold text-slate-900">
-                  Registration
-                </div>
-                <div className="mt-1">
-                  NDIS & SDA Registered Provider • Registration #{SITE.ndisRegistrationNumber}
-                </div>
-              </div>
-            </div>
-            <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-              <Image
-                src="/illustrations/services-uplift.svg"
-                alt="Uplifting illustration representing NDIS supports"
-                width={1600}
-                height={900}
-                className="h-72 w-full object-cover sm:h-96"
-              />
-            </div>
+      <PageHeader
+        eyebrow="Services"
+        title="NDIS disability supports"
+        description="We provide flexible supports across Melbourne and Victoria. All services are delivered in line with NDIS Practice Standards and participant choice and control."
+        imageSrc="/illustrations/services.webp"
+        imageAlt="Uplifting illustration representing NDIS supports"
+      >
+        <p className="max-w-3xl text-sm leading-relaxed text-slate-700">
+          Pricing: <span className="font-semibold text-slate-900">NDIS-funded</span>{" "}
+          (rates and supports depend on your plan and goals). Contact us to
+          confirm availability and fit.
+        </p>
+        <div className="mt-4 rounded-xl border border-slate-200 bg-white p-4 text-sm text-slate-700">
+          <div className="text-sm font-extrabold text-slate-900">Registration</div>
+          <div className="mt-1">
+            NDIS & SDA Registered Provider • Registration #{SITE.ndisRegistrationNumber}
           </div>
-        </Container>
-      </section>
+        </div>
+      </PageHeader>
 
       <section>
         <Container className="py-14">
