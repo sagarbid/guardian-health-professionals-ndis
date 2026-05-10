@@ -75,7 +75,7 @@ export default function AboutPage() {
             <div>
               <SectionHeading
                 eyebrow="About us"
-                title="A family-owned NDIS provider built on trust"
+                title="An NDIS & SDA provider built on trust"
                 description="We support NDIS participants with practical, compassionate care — empowering independence, dignity and choice."
               />
               <div className="mt-6 grid gap-4 md:grid-cols-3 lg:grid-cols-3">

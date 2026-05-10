@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useId, useState } from "react";
 import Container from "@/components/Container";
@@ -25,12 +26,25 @@ export default function SiteNav() {
             className="flex items-center gap-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2"
             aria-label={`${SITE.shortName} home`}
           >
-            <div className="h-9 w-9 rounded-xl bg-gradient-to-br from-blue-600 to-emerald-500" />
+            <div className="flex items-center gap-2">
+              <div className="h-10 w-10 overflow-hidden rounded-xl border border-slate-200 bg-white">
+                <Image
+                  src="/brand/logo.jpeg"
+                  alt=""
+                  width={96}
+                  height={96}
+                  className="h-full w-full object-cover"
+                  priority
+                />
+              </div>
+            </div>
             <div className="leading-tight">
               <div className="text-sm font-semibold text-slate-900">
                 {SITE.shortName}
               </div>
-              <div className="text-xs text-slate-600">NDIS registered</div>
+              <div className="text-xs text-slate-600">
+                NDIS & SDA registered • #{SITE.ndisRegistrationNumber}
+              </div>
             </div>
           </Link>
 
@@ -118,4 +132,3 @@ export default function SiteNav() {
     </header>
   );
 }
-

@@ -3,12 +3,13 @@ export const SITE = {
   shortName: "Guardian Health Professionals",
   legalName: "Guardian Health Professionals Pty Ltd",
   abn: "46 637 290 110",
-  addressLine: "Wollert VIC 3750",
+  addressLine: "11 Jumbuck Circuit, Wollert VIC 3750",
   country: "Australia",
-  email: "info@guardianhealthprofessionals.com.au",
-  phone: "1300 000 000",
+  email: "admin@guardianhealthprofessionals.com.au",
+  phone: "0420 279 007",
   hours: "Mon–Fri 9:00am–5:00pm (AEST/AEDT)",
   serviceAreas: ["Melbourne", "Northern suburbs", "Victoria"],
+  ndisRegistrationNumber: "4050127902",
 } as const;
 
 export const NAV_LINKS = [
@@ -18,4 +19,3 @@ export const NAV_LINKS = [
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ] as const;
-

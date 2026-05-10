@@ -9,17 +9,32 @@ export default function SiteFooter() {
       <Container className="py-10">
         <div className="grid gap-8 md:grid-cols-3">
           <div className="space-y-3">
-            <div className="text-base font-semibold text-slate-900">
-              {SITE.shortName}
+            <div className="flex items-center gap-3">
+              <div className="h-11 w-11 overflow-hidden rounded-2xl border border-slate-200 bg-white">
+                <Image
+                  src="/brand/logo.jpeg"
+                  alt={`${SITE.shortName} logo`}
+                  width={96}
+                  height={96}
+                  className="h-full w-full object-cover"
+                />
+              </div>
+              <div className="text-base font-semibold text-slate-900">
+                {SITE.shortName}
+              </div>
             </div>
             <p className="text-sm text-slate-700">
-              Family-owned Australian disability support with 40+ years combined
-              experience. Supporting NDIS participants with dignity, safety and
-              compassionate care.
+              Disability support with 40+ years combined experience. Supporting
+              NDIS participants with dignity, safety and compassionate care.
             </p>
             <p className="text-sm text-slate-700">
               <span className="font-semibold text-slate-900">ABN:</span>{" "}
               {SITE.abn}
+              <br />
+              <span className="font-semibold text-slate-900">
+                NDIS Registration #:
+              </span>{" "}
+              {SITE.ndisRegistrationNumber}
               <br />
               <span className="font-semibold text-slate-900">Location:</span>{" "}
               {SITE.addressLine}
@@ -87,16 +102,15 @@ export default function SiteFooter() {
 
             <div className="rounded-xl border border-slate-200 bg-white p-3">
               <div className="text-xs font-semibold text-slate-900">
-                NDIS registered provider
+                NDIS & SDA registered provider
               </div>
               <div className="mt-2">
-                <Image
-                  src="/ndis-mark.svg"
-                  alt="NDIS registered provider (placeholder mark)"
-                  width={260}
-                  height={72}
-                  className="h-10 w-auto"
-                />
+                <div className="text-xs text-slate-700">
+                  <span className="font-semibold text-slate-900">
+                    Registration #:
+                  </span>{" "}
+                  {SITE.ndisRegistrationNumber}
+                </div>
               </div>
               <div className="mt-1 text-xs text-slate-600">
                 <span className="font-semibold text-slate-900">Note:</span>{" "}

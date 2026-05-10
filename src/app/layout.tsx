@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE.shortName}`,
   },
   description:
-    "NDIS-registered disability support in Melbourne (Wollert, VIC). Compassionate, family-owned care supporting independence, dignity, and daily living.",
+    "NDIS-registered disability support in Melbourne (Wollert, VIC). Compassionate care supporting independence, dignity, and daily living.",
   applicationName: SITE.shortName,
   alternates: { canonical: "/" },
   openGraph: {

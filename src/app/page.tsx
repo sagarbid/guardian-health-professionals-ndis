@@ -17,7 +17,7 @@ export default function HomePage() {
             <div>
               <div className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-700">
                 <span className="h-2 w-2 rounded-full bg-emerald-500" />
-                NDIS-registered provider • Melbourne / Victoria
+                NDIS & SDA Registered Provider • Melbourne / Victoria
               </div>
               <h1 className="mt-5 text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
                 Guardian Health Professionals
@@ -26,9 +26,9 @@ export default function HomePage() {
                 </span>
               </h1>
               <p className="mt-5 max-w-xl text-lg leading-relaxed text-slate-700">
-                Family-owned disability support with 40+ years combined
-                experience. We empower independence, dignity and choice through
-                compassionate, reliable care.
+                Disability support with 40+ years combined experience. We
+                empower independence, dignity and choice through compassionate,
+                reliable care.
               </p>
 
               <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -70,21 +70,15 @@ export default function HomePage() {
             </div>
 
             <div className="lg:pl-6">
-              <div className="relative mb-4 overflow-hidden rounded-2xl border border-slate-200 bg-slate-900 shadow-sm">
+              <div className="relative mb-4 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
                 <Image
-                  src="/photos/hero.jpg"
-                  alt="A person using a wheelchair in a bright, accessible home setting"
+                  src="/illustrations/hero-uplift.svg"
+                  alt="Uplifting illustration of disability support and community connection"
                   width={1600}
-                  height={1067}
+                  height={900}
                   className="h-56 w-full object-cover sm:h-72"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/15 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-4">
-                  <div className="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-slate-900">
-                    Compassionate, participant-led support
-                  </div>
-                </div>
               </div>
               <ContactCtaForm />
             </div>

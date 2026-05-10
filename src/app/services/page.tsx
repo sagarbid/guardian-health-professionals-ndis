@@ -62,6 +62,14 @@ export default function ServicesPage() {
                 (rates and supports depend on your plan and goals). Contact us
                 to confirm availability and fit.
               </p>
+              <div className="mt-4 rounded-xl border border-slate-200 bg-white p-4 text-sm text-slate-700">
+                <div className="text-sm font-extrabold text-slate-900">
+                  Registration
+                </div>
+                <div className="mt-1">
+                  NDIS & SDA Registered Provider • Registration #{SITE.ndisRegistrationNumber}
+                </div>
+              </div>
             </div>
             <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
               <Image
