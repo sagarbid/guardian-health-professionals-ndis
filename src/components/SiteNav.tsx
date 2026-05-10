@@ -29,7 +29,7 @@ export default function SiteNav() {
             <div className="flex items-center gap-2">
               <div className="h-10 w-10 overflow-hidden rounded-xl border border-slate-200 bg-white">
                 <Image
-                  src="/brand/logo.jpeg"
+                  src="/brand/logo-mark-96.png"
                   alt=""
                   width={96}
                   height={96}
@@ -39,7 +39,17 @@ export default function SiteNav() {
               </div>
             </div>
             <div className="leading-tight">
-              <div className="text-sm font-semibold text-slate-900">
+              <div className="hidden sm:block">
+                <Image
+                  src="/brand/logo-wordmark.png"
+                  alt={SITE.shortName}
+                  width={520}
+                  height={140}
+                  className="h-6 w-auto"
+                  priority
+                />
+              </div>
+              <div className="sm:hidden text-sm font-semibold text-slate-900">
                 {SITE.shortName}
               </div>
               <div className="text-xs text-slate-600">

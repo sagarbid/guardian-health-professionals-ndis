@@ -12,8 +12,8 @@ export default function SiteFooter() {
             <div className="flex items-center gap-3">
               <div className="h-11 w-11 overflow-hidden rounded-2xl border border-slate-200 bg-white">
                 <Image
-                  src="/brand/logo.jpeg"
-                  alt={`${SITE.shortName} logo`}
+                  src="/brand/logo-mark-128.png"
+                  alt={`${SITE.shortName} logo mark`}
                   width={96}
                   height={96}
                   className="h-full w-full object-cover"

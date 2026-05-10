@@ -73,10 +73,10 @@ export default function ServicesPage() {
             </div>
             <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
               <Image
-                src="/photos/services.jpg"
-                alt="An accessible entrance ramp with handrails"
+                src="/illustrations/services-uplift.svg"
+                alt="Uplifting illustration representing NDIS supports"
                 width={1600}
-                height={1067}
+                height={900}
                 className="h-72 w-full object-cover sm:h-96"
               />
             </div>

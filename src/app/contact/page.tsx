@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Container from "@/components/Container";
 import ContactCtaForm from "@/components/ContactCtaForm";
 import SectionHeading from "@/components/SectionHeading";
@@ -16,11 +17,25 @@ export default function ContactPage() {
     <div className="bg-white">
       <section className="border-b border-slate-200 bg-gradient-to-b from-slate-50 to-white">
         <Container className="py-14 sm:py-20">
-          <SectionHeading
-            eyebrow="Contact"
-            title="Talk to our team"
-            description="Tell us what you need support with and we’ll respond promptly."
-          />
+          <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
+            <div>
+              <SectionHeading
+                eyebrow="Contact"
+                title="Talk to our team"
+                description="Tell us what you need support with and we’ll respond promptly."
+              />
+            </div>
+            <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+              <Image
+                src="/illustrations/contact-uplift.svg"
+                alt="Uplifting illustration for contact and support"
+                width={1600}
+                height={900}
+                className="h-72 w-full object-cover sm:h-96"
+                priority
+              />
+            </div>
+          </div>
         </Container>
       </section>
 
@@ -96,4 +111,3 @@ export default function ContactPage() {
     </div>
   );
 }
-

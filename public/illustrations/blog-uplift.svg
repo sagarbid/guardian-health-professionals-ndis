@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Uplifting NDIS resources illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eff6ff"/>
+      <stop offset="0.55" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#ecfdf5"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1d4ed8"/>
+      <stop offset="1" stop-color="#10b981"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#0f172a" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="900" rx="56" fill="url(#bg)"/>
+
+  <!-- Tablet card -->
+  <g filter="url(#shadow)">
+    <rect x="260" y="170" width="1080" height="560" rx="48" fill="#ffffff"/>
+    <rect x="260" y="170" width="1080" height="560" rx="48" fill="none" stroke="#e2e8f0" stroke-width="2"/>
+  </g>
+
+  <rect x="320" y="230" width="960" height="54" rx="22" fill="#f8fafc" stroke="#e2e8f0"/>
+  <rect x="350" y="250" width="260" height="14" rx="7" fill="#94a3b8" opacity="0.35"/>
+  <rect x="640" y="250" width="160" height="14" rx="7" fill="#94a3b8" opacity="0.25"/>
+
+  <!-- Content lines -->
+  <rect x="360" y="330" width="540" height="18" rx="9" fill="#94a3b8" opacity="0.28"/>
+  <rect x="360" y="368" width="640" height="18" rx="9" fill="#94a3b8" opacity="0.20"/>
+  <rect x="360" y="406" width="600" height="18" rx="9" fill="#94a3b8" opacity="0.20"/>
+
+  <rect x="360" y="470" width="420" height="18" rx="9" fill="#94a3b8" opacity="0.28"/>
+  <rect x="360" y="508" width="660" height="18" rx="9" fill="#94a3b8" opacity="0.20"/>
+  <rect x="360" y="546" width="590" height="18" rx="9" fill="#94a3b8" opacity="0.20"/>
+
+  <!-- Checklist / lightbulb / calendar icons -->
+  <g stroke="url(#accent)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.95">
+    <rect x="980" y="330" width="260" height="170" rx="30"/>
+    <path d="M1030 378l24 24 44-54"/>
+    <path d="M1030 430l24 24 44-54"/>
+    <path d="M1130 388h70" opacity="0.6"/>
+    <path d="M1130 440h70" opacity="0.6"/>
+
+    <rect x="980" y="520" width="120" height="120" rx="30"/>
+    <path d="M1040 548c20 0 36 16 36 36 0 14-8 26-20 32v14h-32v-14c-12-6-20-18-20-32 0-20 16-36 36-36z"/>
+
+    <rect x="1120" y="520" width="120" height="120" rx="30"/>
+    <path d="M1146 552h68M1146 582h68M1162 536v24M1198 536v24" opacity="0.7"/>
+  </g>
+
+  <!-- Person with wheelchair + support worker (simple) -->
+  <g transform="translate(320 600)" opacity="0.95">
+    <path d="M0 120c140-90 300-120 480-92 180 28 360 18 520-26 34-10 72 8 82 42 10 34-12 70-44 80-186 52-372 62-556 30-156-28-312 0-470 84-28 14-62 4-78-24-16-28-6-64 22-78z" fill="#e2e8f0" opacity="0.5"/>
+  </g>
+</svg>
+

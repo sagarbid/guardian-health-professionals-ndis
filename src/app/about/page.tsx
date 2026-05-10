@@ -111,10 +111,10 @@ export default function AboutPage() {
 
             <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
               <Image
-                src="/photos/about.jpg"
-                alt="A person using a wheelchair outdoors in an urban setting"
+                src="/illustrations/about-uplift.svg"
+                alt="Uplifting illustration of an inclusive support team and community"
                 width={1600}
-                height={1067}
+                height={900}
                 className="h-72 w-full object-cover sm:h-96"
               />
             </div>
