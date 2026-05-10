@@ -40,14 +40,9 @@ export default function SiteNav() {
             </div>
             <div className="leading-tight">
               <div className="hidden sm:block">
-                <Image
-                  src="/brand/logo-wordmark.png"
-                  alt={SITE.shortName}
-                  width={520}
-                  height={140}
-                  className="h-7 w-auto"
-                  priority
-                />
+                <div className="text-sm font-extrabold tracking-tight text-slate-900">
+                  {SITE.shortName}
+                </div>
               </div>
               <div className="sm:hidden text-sm font-semibold text-slate-900">
                 {SITE.shortName}
