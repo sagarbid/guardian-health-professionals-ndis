@@ -1,8 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import SiteFooter from "@/components/SiteFooter";
 import SiteNav from "@/components/SiteNav";
+import Footer4Col from "@/components/ui/footer-column";
 import { SITE } from "@/lib/site";
 import Script from "next/script";
 
@@ -93,7 +93,7 @@ export default function RootLayout({
         <main id="main" className="flex-1">
           {children}
         </main>
-        <SiteFooter />
+        <Footer4Col />
       </body>
     </html>
   );
