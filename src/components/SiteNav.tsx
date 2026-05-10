@@ -48,7 +48,15 @@ export default function SiteNav() {
                 {SITE.shortName}
               </div>
               <div className="text-xs text-slate-600">
-                NDIS & SDA registered • #{SITE.ndisRegistrationNumber}
+                <a
+                  href="https://www.ndiscommission.gov.au/providers/registered-ndis-providers"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline underline-offset-4 hover:text-slate-900"
+                >
+                  NDIS & SDA registered
+                </a>{" "}
+                • #{SITE.ndisRegistrationNumber}
               </div>
             </div>
           </Link>

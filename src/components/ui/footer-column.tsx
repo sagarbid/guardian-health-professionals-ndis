@@ -11,6 +11,7 @@ import {
 import Link from "next/link";
 
 import { SITE } from "@/lib/site";
+import { NdisRegisteredBadge } from "@/components/ui/ndis-registered-badge";
 
 const data = {
   facebookLink: "https://facebook.com/",
@@ -201,9 +202,7 @@ export default function Footer4Col() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-6 text-xs text-secondary-foreground/70">
-                NDIS Registration #{SITE.ndisRegistrationNumber}
-              </div>
+              <NdisRegisteredBadge className="mt-6" compact />
             </div>
           </div>
         </div>
